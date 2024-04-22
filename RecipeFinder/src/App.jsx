@@ -1,12 +1,14 @@
 import { useState } from 'react'
-import './App.css'
+import "./CSS Styles/App.css"
+
+import { Searchbar } from './Components/Search.jsx';
 
 function App() {
   return (
     <div>
-      Hello
+      <Searchbar />
     </div>
-  )
+  );
 }
 
 export default App

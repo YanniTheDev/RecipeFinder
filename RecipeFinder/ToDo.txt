@@ -1,0 +1,8 @@
+--23/04/24
+Make placeholder for searchbar appear on top of searchbar when focused on
+Find an API for recipe
+Find good fonts
+
+--24/04/24
+Display recipes from the API (can be console message)
+Display recipe name on screen
