@@ -1,0 +1,7 @@
+/* STYLES HERE ARE USED THROUGHOUT MULTIPLE FILES */
+
+.flex-c-c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
