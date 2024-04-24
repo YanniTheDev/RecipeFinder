@@ -12,7 +12,7 @@
     padding-right: 10px;
 
     border: none;
-    box-shadow: 0px 0px 50px rgb(165, 165, 165);
+    box-shadow: 0px 0px 30px rgb(165, 165, 165);
     border-radius: 10px;
 
     transition: box-shadow 0.2s ease-in-out;
@@ -21,5 +21,5 @@
 .search-box:focus {
     outline: none;
 
-    box-shadow: 0px 0px 50px rgb(70, 70, 70);
+    box-shadow: 0px 0px 30px rgb(70, 70, 70);
 }

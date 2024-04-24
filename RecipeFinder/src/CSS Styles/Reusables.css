@@ -1,7 +1,24 @@
 /* STYLES HERE ARE USED THROUGHOUT MULTIPLE FILES */
 
+/* FLEX DISPLAYS */
 .flex-c-c {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* FONTS */
+@font-face {
+    font-family: Madimi-Regular;
+    src: url("../Fonts/Madimi/MadimiOne-Regular.ttf");
+}
+@font-face {
+    font-family: Comfortaa-Medium;
+    src: url("../Fonts/Comfortaa/static/Comfortaa-Medium.ttf");
+}
+.madimi-regular {
+    font-family: Madimi-Regular, Arial, Helvetica, sans-serif;
+}
+.comfortaa-medium {
+    font-family: Comfortaa-Medium, Arial, Helvetica, sans-serif;
 }
