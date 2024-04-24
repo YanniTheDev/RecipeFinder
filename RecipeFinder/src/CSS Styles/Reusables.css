@@ -1,6 +1,9 @@
 /* STYLES HERE ARE USED THROUGHOUT MULTIPLE FILES */
 
 /* FLEX DISPLAYS */
+.flex-dir-column {
+    flex-direction: column;
+}
 .flex-c-c {
     display: flex;
     justify-content: center;
