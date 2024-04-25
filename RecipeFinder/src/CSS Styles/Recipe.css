@@ -1,0 +1,6 @@
+.individual-recipe-container {
+    width: 70vw;
+
+    box-shadow: 0px 0px 30px rgb(165, 165, 165);
+    border-radius: 10px;
+}
