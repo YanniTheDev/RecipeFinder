@@ -45,12 +45,14 @@ export const Searchbar = () => {
                    className="search-box comfortaa-medium"
             />
 
-            { recipes && (
-                    recipes.map((recipe) => {
-                        return ( <Recipe recipeList={recipe}/> );
-                    })
-                )
-            }
+            <div className="recipes-container flex-c-c flex-dir-column">
+                { recipes && !fetchingRecipes && (
+                        recipes.map((recipe) => {
+                            return ( <Recipe recipeList={recipe}/> );
+                        })
+                    )
+                }
+            </div>
             
             {fetchingRecipes && (
                 <div className="loader">

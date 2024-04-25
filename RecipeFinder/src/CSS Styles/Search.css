@@ -1,66 +1,79 @@
 .search-container {
-    width: 100vw;
+  width: 100vw;
 
-    margin-top: 8vh;
+  margin-top: 8vh;
 }
 
 .search-box {
-    width: 35vw;
-    height: 5vh;
+  width: 35vw;
+  height: 5vh;
 
-    padding-left: 10px;
-    padding-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 
-    margin-bottom: 37vh;
+  margin-bottom: 10vh;
 
-    border: none;
-    box-shadow: 0px 0px 30px rgb(165, 165, 165);
-    border-radius: 10px;
+  border: none;
+  box-shadow: 0px 0px 30px rgb(165, 165, 165);
+  border-radius: 10px;
 
-    transition: box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
 }
 
 .search-box:focus {
-    outline: none;
+  outline: none;
 
-    box-shadow: 0px 0px 30px rgb(70, 70, 70);
+  box-shadow: 0px 0px 30px rgb(70, 70, 70);
+}
+
+.recipes-container {
+  /* FLEX DISPLAYS IN REUSABLES.CSS */
+  gap: 8vh;
 }
 
 .loader {
-    width: 4px;
-    color: #000;
-    aspect-ratio: 1;
-    border-radius: 50%;
-    box-shadow: 
-      19px -19px 0 0px, 38px -19px 0 0px, 57px -19px 0 0px,
-      19px 0     0 5px, 38px 0     0 5px, 57px 0     0 5px,
-      19px 19px  0 0px, 38px 19px  0 0px, 57px 19px  0 0px;
-    transform: translateX(-38px);
-    animation: l26 2s infinite linear;
-  }
-  @keyframes l26 {
-    12.5% {box-shadow: 
-      19px -19px 0 0px, 38px -19px 0 0px, 57px -19px 0 5px,
-      19px 0     0 5px, 38px 0     0 0px, 57px 0     0 5px,
-      19px 19px  0 0px, 38px 19px  0 0px, 57px 19px  0 0px}
-    25%   {box-shadow: 
-      19px -19px 0 5px, 38px -19px 0 0px, 57px -19px 0 5px,
-      19px 0     0 0px, 38px 0     0 0px, 57px 0     0 0px,
-      19px 19px  0 0px, 38px 19px  0 5px, 57px 19px  0 0px}
-    50%   {box-shadow: 
-      19px -19px 0 5px, 38px -19px 0 5px, 57px -19px 0 0px,
-      19px 0     0 0px, 38px 0     0 0px, 57px 0     0 0px,
-      19px 19px  0 0px, 38px 19px  0 0px, 57px 19px  0 5px}
-    62.5% {box-shadow: 
-      19px -19px 0 0px, 38px -19px 0 0px, 57px -19px 0 0px,
-      19px 0     0 5px, 38px 0     0 0px, 57px 0     0 0px,
-      19px 19px  0 0px, 38px 19px  0 5px, 57px 19px  0 5px}
-    75%   {box-shadow: 
-      19px -19px 0 0px, 38px -19px 0 5px, 57px -19px 0 0px,
-      19px 0     0 0px, 38px 0     0 0px, 57px 0     0 5px,
-      19px 19px  0 0px, 38px 19px  0 0px, 57px 19px  0 5px}
-    87.5% {box-shadow: 
-      19px -19px 0 0px, 38px -19px 0 5px, 57px -19px 0 0px,
-      19px 0     0 0px, 38px 0     0 5px, 57px 0     0 0px,
-      19px 19px  0 5px, 38px 19px  0 0px, 57px 19px  0 0px}
+  margin-top: 28vh;
+
+  width: 4px;
+
+  color: #000;
+
+  aspect-ratio: 1;
+
+  border-radius: 50%;
+  box-shadow: 
+    19px -19px 0 0px, 38px -19px 0 0px, 57px -19px 0 0px,
+    19px 0     0 5px, 38px 0     0 5px, 57px 0     0 5px,
+    19px 19px  0 0px, 38px 19px  0 0px, 57px 19px  0 0px;
+
+  transform: translateX(-38px);
+
+  animation: l26 2s infinite linear;
+}
+
+@keyframes l26 {
+  12.5% {box-shadow: 
+    19px -19px 0 0px, 38px -19px 0 0px, 57px -19px 0 5px,
+    19px 0     0 5px, 38px 0     0 0px, 57px 0     0 5px,
+    19px 19px  0 0px, 38px 19px  0 0px, 57px 19px  0 0px}
+  25%   {box-shadow: 
+    19px -19px 0 5px, 38px -19px 0 0px, 57px -19px 0 5px,
+    19px 0     0 0px, 38px 0     0 0px, 57px 0     0 0px,
+    19px 19px  0 0px, 38px 19px  0 5px, 57px 19px  0 0px}
+  50%   {box-shadow: 
+    19px -19px 0 5px, 38px -19px 0 5px, 57px -19px 0 0px,
+    19px 0     0 0px, 38px 0     0 0px, 57px 0     0 0px,
+    19px 19px  0 0px, 38px 19px  0 0px, 57px 19px  0 5px}
+  62.5% {box-shadow: 
+    19px -19px 0 0px, 38px -19px 0 0px, 57px -19px 0 0px,
+    19px 0     0 5px, 38px 0     0 0px, 57px 0     0 0px,
+    19px 19px  0 0px, 38px 19px  0 5px, 57px 19px  0 5px}
+  75%   {box-shadow: 
+    19px -19px 0 0px, 38px -19px 0 5px, 57px -19px 0 0px,
+    19px 0     0 0px, 38px 0     0 0px, 57px 0     0 5px,
+    19px 19px  0 0px, 38px 19px  0 0px, 57px 19px  0 5px}
+  87.5% {box-shadow: 
+    19px -19px 0 0px, 38px -19px 0 5px, 57px -19px 0 0px,
+    19px 0     0 0px, 38px 0     0 5px, 57px 0     0 0px,
+    19px 19px  0 5px, 38px 19px  0 0px, 57px 19px  0 0px}
 }
