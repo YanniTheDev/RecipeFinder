@@ -4,13 +4,12 @@ import "../CSS Styles/Reusables.css";
 import { useState } from "react";
 
 import Axios from "axios";
-
-// IMAGES
-import loadingWheel from "../Images/LoadingWheel.png";
+import { Recipe } from "./Recipe.jsx";
 
 export const Searchbar = () => {
     const [recipeNameQuery, setRecipeNameQuery] = useState("");
     const [fetchingRecipes, setFetchingRecipes] = useState(false);
+    const [recipes, setRecipes] = useState();
 
     const setRecipeQuery = (event) => {
         setRecipeNameQuery(event.target.value);
@@ -18,18 +17,21 @@ export const Searchbar = () => {
 
     const getRecipes = () => {
         setFetchingRecipes(true);
-        console.log(1);
 
         Axios.get(`https://api.edamam.com/search?q=${recipeNameQuery}&app_id=0e3ef802&app_key=a1b68ccf537c38d19a2af561d81b1bd9`).then((response) => {
             console.log(response.data);
 
-            console.log(2);
+            console.log(response.data.hits);
+
+            const recipeList = response.data.hits;
+            setRecipes(recipeList);
+
             setFetchingRecipes(false);
         });
     }
     
     const handleKeyDown = (event) => {
-        if (event.keyCode === 13) { //Enter key
+        if ((event.keyCode === 13) && event.target.value != "") { //Enter key
             getRecipes();
         }
     }
@@ -43,6 +45,12 @@ export const Searchbar = () => {
                    className="search-box comfortaa-medium"
             />
 
+            { recipes && (
+                    recipes.map((recipe) => {
+                        return ( <Recipe recipeList={recipe}/> );
+                    })
+                )
+            }
             
             {fetchingRecipes && (
                 <div className="loader">
