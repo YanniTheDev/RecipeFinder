@@ -1,5 +1,6 @@
 import "../CSS Styles/Search.css";
 import "../CSS Styles/Reusables.css";
+import "../CSS Styles/Reset.css";
 
 import { useState } from "react";
 

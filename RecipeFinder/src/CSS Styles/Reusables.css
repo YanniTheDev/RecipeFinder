@@ -19,9 +19,31 @@
     font-family: Comfortaa-Medium;
     src: url("../Fonts/Comfortaa/static/Comfortaa-Medium.ttf");
 }
+@font-face {
+    font-family: Dangrek-Regular;
+    src: url("../Fonts/Dangrek/Dangrek-Regular.ttf");
+}
+@font-face {
+    font-family: Lato-Bold;
+    src: url("../Fonts/Lato/Lato-Bold.ttf");
+}
+@font-face {
+    font-family: Nunito-Bold;
+    src: url("../Fonts/Nunito/static/Nunito-Bold.ttf");
+}
+
 .madimi-regular {
     font-family: Madimi-Regular, Arial, Helvetica, sans-serif;
 }
 .comfortaa-medium {
     font-family: Comfortaa-Medium, Arial, Helvetica, sans-serif;
+}
+.dangrek-regular {
+    font-family: Dangrek-Regular, Arial, Helvetica, sans-serif;
+}
+.lato-bold {
+    font-family: Lato-Bold, Arial, Helvetica, sans-serif;
+}
+.nunito-bold {
+    font-family: Nunito-Bold, Arial, Helvetica, sans-serif;
 }

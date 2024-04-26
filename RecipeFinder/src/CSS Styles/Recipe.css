@@ -1,6 +1,13 @@
 .individual-recipe-container {
     width: 70vw;
 
+    padding-left: 20px;
+    padding-right: 20px;
+
     box-shadow: 0px 0px 30px rgb(165, 165, 165);
     border-radius: 10px;
+}
+
+.recipe-name {
+    text-transform: capitalize;
 }
