@@ -1,3 +1,12 @@
 .content {
   margin-bottom: 8vh;
 }
+
+.web-title {
+  margin-top: 4vh;
+
+  font-size: 5cqw;
+
+  letter-spacing: 0.3vw;
+  word-spacing: 1vw;
+}

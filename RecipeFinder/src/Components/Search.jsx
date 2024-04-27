@@ -17,18 +17,21 @@ export const Searchbar = () => {
     }
 
     const getRecipes = () => {
-        setFetchingRecipes(true);
+        if (recipeNameQuery.trim() != "")
+        {
+            setFetchingRecipes(true);
 
-        Axios.get(`https://api.edamam.com/search?q=${recipeNameQuery}&app_id=0e3ef802&app_key=a1b68ccf537c38d19a2af561d81b1bd9`).then((response) => {
-            console.log(response.data);
+            Axios.get(`https://api.edamam.com/search?q=${recipeNameQuery}&app_id=0e3ef802&app_key=a1b68ccf537c38d19a2af561d81b1bd9`).then((response) => {
+                console.log(response.data);
 
-            console.log(response.data.hits);
+                console.log(response.data.hits);
 
-            const recipeList = response.data.hits;
-            setRecipes(recipeList);
+                const recipeList = response.data.hits;
+                setRecipes(recipeList);
 
-            setFetchingRecipes(false);
-        });
+                setFetchingRecipes(false);
+            });
+        }
     }
     
     const handleKeyDown = (event) => {
@@ -40,10 +43,11 @@ export const Searchbar = () => {
     return (
         <div className="search-container flex-c-c flex-dir-column">
             <input type="text" 
-                   placeholder="Search for a recipe" 
                    onChange={setRecipeQuery}
                    onKeyUp={handleKeyDown} 
                    className="search-box comfortaa-medium"
+                   placeholder="Find a recipe"
+                   title="Enter a recipe name"
             />
 
             <div className="recipes-container flex-c-c flex-dir-column">

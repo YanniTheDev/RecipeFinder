@@ -6,9 +6,15 @@ import { Searchbar } from './Components/Search.jsx';
 
 function App() {
   return (
-    <div className="content flex-c-c">
-      <Searchbar />
-    </div>
+    <>
+      <header>
+        <h1 className="web-title staatliches text-align-c">Search for a recipe?</h1>
+      </header>
+
+      <div className="content flex-c-c">
+        <Searchbar />
+      </div>
+    </>
   );
 }
 

@@ -13,4 +13,7 @@ Display the picture of the recipe and the ingredients
 Find good fonts!
 
 --27/04/24
-Make it so that the ingredients is only shown when the user expands each recipe card
+Re-style it so that it looks better
+
+--??/??/??
+Make an ingredient pop-out button on the recipe card's side
