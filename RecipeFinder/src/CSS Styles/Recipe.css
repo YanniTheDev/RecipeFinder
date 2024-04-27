@@ -1,6 +1,40 @@
 .individual-recipe-container {
     width: 70vw;
 
+    padding-left: 0;
+    padding-right: 20px;
+
     box-shadow: 0px 0px 30px rgb(165, 165, 165);
     border-radius: 10px;
+}
+
+.recipe-image {
+    width: 17vw;
+
+    margin-right: 5vw;
+
+    border-radius: 10px 0px 0px 10px;
+}
+
+.recipe-name-container {
+    width: 100%;
+}
+
+.recipe-name {
+    text-transform: capitalize;
+
+    font-size: 3.5cqw;
+
+    line-height: 7vh;
+    
+    margin-bottom: 2vh;
+}
+
+.ingredient-list {
+    list-style-position: inside;
+    padding: 0;
+}
+
+.recipe-individual-ingredient {
+    text-indent: 0;
 }
