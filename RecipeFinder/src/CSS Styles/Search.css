@@ -18,12 +18,20 @@
   border-radius: 10px;
 
   transition: box-shadow 0.2s ease-in-out;
+
+  text-align: center;
 }
 
 .search-box:focus {
   outline: none;
 
   box-shadow: 0px 0px 30px rgb(70, 70, 70);
+}
+
+.search-box::placeholder {
+  text-align: center;
+
+  font-size: 2vh;
 }
 
 .recipes-container {

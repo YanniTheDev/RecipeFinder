@@ -1,5 +1,6 @@
 .individual-recipe-container {
     width: 70vw;
+    height: 45vh;
 
     padding-left: 0;
     padding-right: 20px;
@@ -9,7 +10,7 @@
 }
 
 .recipe-image {
-    width: 17vw;
+    height: 45vh;
 
     margin-right: 5vw;
 
@@ -28,6 +29,10 @@
     line-height: 7vh;
     
     margin-bottom: 2vh;
+}
+
+.recipe-calories {
+    font-size: 1.6cqw;
 }
 
 .ingredient-list {

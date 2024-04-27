@@ -48,6 +48,12 @@ export const Searchbar = () => {
                    className="search-box comfortaa-medium"
                    placeholder="Find a recipe"
                    title="Enter a recipe name"
+                   onFocus={(event) => {
+                    event.target.placeholder = "";
+                   }}
+                   onBlur={(event) => {
+                    event.target.placeholder = "Find a recipe";
+                   }}
             />
 
             <div className="recipes-container flex-c-c flex-dir-column">
