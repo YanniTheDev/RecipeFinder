@@ -34,10 +34,6 @@
   font-size: 2vh;
 }
 
-.recipes-container {
-  /* FLEX DISPLAYS IN REUSABLES.CSS */
-  gap: 8vh;
-}
 
 .loader {
   margin-top: 28vh;
