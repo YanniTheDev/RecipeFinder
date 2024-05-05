@@ -46,13 +46,13 @@ export const Searchbar = () => {
                    onChange={setRecipeQuery}
                    onKeyUp={handleKeyDown} 
                    className="search-box comfortaa-medium"
-                   placeholder="Find a recipe"
+                   placeholder="Type here..."
                    title="Enter a recipe name"
                    onFocus={(event) => {
                     event.target.placeholder = "";
                    }}
                    onBlur={(event) => {
-                    event.target.placeholder = "Find a recipe";
+                    event.target.placeholder = "Type here...";
                    }}
             />
 
