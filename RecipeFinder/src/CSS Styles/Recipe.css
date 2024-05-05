@@ -43,3 +43,7 @@
 .recipe-individual-ingredient {
     text-indent: 0;
 }
+
+.ingredients-button {
+    margin-bottom: 8vh;
+}
