@@ -29,7 +29,7 @@ export const Recipe = (props) => {
                 </div>
             </div>
 
-            <div className="extra-recipe-info">
+            <div className="extra-recipe-info flex-e-c">
                 <button className="ingredients-button">Ingredients</button>
             </div>
         </>
