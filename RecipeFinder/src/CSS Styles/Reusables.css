@@ -1,6 +1,9 @@
 /* STYLES HERE ARE USED THROUGHOUT MULTIPLE FILES */
 
 /* FLEX DISPLAYS */
+.flex-dir-row {
+    flex-direction: row;
+}
 .flex-dir-column {
     flex-direction: column;
 }
